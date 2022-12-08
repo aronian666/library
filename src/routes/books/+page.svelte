@@ -6,7 +6,7 @@
     import Pagination from "$lib/components/Pagination.svelte";
     import Input from "$lib/components/Input.svelte";
     import Excel from "$lib/svgs/Excel.svelte";
-    import { toXLSX } from "$lib/utils.js";
+    import { toXLSX } from "$lib/Utils.js";
     export let data;
     let suggestions = data.suggestions;
     let books = data.books.map((book) => new Book(book));
