@@ -1,12 +1,12 @@
 <script>
-    import { searchArray } from "$lib/Search";
+    import { searchArray } from "$lib/Search.js";
     import { Book } from "$lib/Models";
     import Give from "$lib/svgs/Give.svelte";
     import Details from "$lib/svgs/Details.svelte";
     import Pagination from "$lib/components/Pagination.svelte";
     import Input from "$lib/components/Input.svelte";
     import Excel from "$lib/svgs/Excel.svelte";
-    import { toXLSX } from "$lib/utils";
+    import { toXLSX } from "$lib/utils.js";
     export let data;
     let suggestions = data.suggestions;
     let books = data.books.map((book) => new Book(book));
